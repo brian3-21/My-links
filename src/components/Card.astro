@@ -1,4 +1,6 @@
 ---
+import Card_button from '../components/Card_button.astro';
+
 interface Props {
 	title: string;
 	description: string;
@@ -12,9 +14,15 @@ const {title, description } = Astro.props;
 		<h2 class="card-title">{title}</h2>
 			<p class="card-description">{description}</p>
 			<div class="card-actions" >
-				<button class="secondary">Editar</button>
-				<button class="secondary" id="deleteCard">Eliminar</button> 
-				<button class="outline contrast">Copiar</button>
+				<Card_button
+					name='Editar'
+				/>
+				<Card_button
+					name='Eliminar'
+				/>
+				<Card_button
+					name='Copiar'
+				/>
 			</div>
 		</div>
 	  </article>
