@@ -1,0 +1,54 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const {title, description } = Astro.props;
+---
+
+<li class="link-card">
+	<article>
+		<h2 class="card-title">{title}</h2>
+			<p class="card-description">{description}</p>
+			<div class="card-actions" >
+				<button class="secondary">Editar</button>
+				<button class="secondary" id="deleteCard">Eliminar</button> 
+				<button class="outline contrast">Copiar</button>
+			</div>
+		</div>
+	  </article>
+</li>
+<style>
+	
+	.link-card {
+		background-color: #58ff32;
+	}
+	
+	.card-actions{
+		display: flex; "
+	}
+	.secondary{
+		margin-left: 10px;
+	}
+	.outline contrast{
+		margin-left: auto;
+	}
+	
+	
+	
+</style>
+
+
+
+<!-- <article>
+	<h2 class="card-title">Play list de magnetismo</h2>
+		<p class="card-description">Este es el link para acceder al cebio</p>
+		<p>https://www.youtube.com/watch?v=wmaYYzBg-EM&list=PLkDKwmp6CmZYtt9hjkYp2KoAThh52axK2&index=1</p>
+		<div style="display: flex; " class="card-actions" >
+			<button style="margin-left: 10px;"class="secondary">Editar</button>
+			<button style="margin-left: 10px;"class="secondary" id="deleteCard">Eliminar</button> 
+			<button style="margin-left: auto;"class="outline contrast">Copiar</button>
+		</div>
+	</div>
+  </article> -->
