@@ -2,18 +2,19 @@
 
 interface Props {
     name: string;
-    classPico: string;    
+    classPico: string; 
 }
 
-const {name , classPico} = Astro.props;
+const {name , classPico,} = Astro.props;
 
 ---
 
-
-<button class={classPico}>
+<button class={classPico} }>    
     {name}
 </button>
 
 <style>
-
+    button{
+        margin-left: 10px;
+    }
 </style>
