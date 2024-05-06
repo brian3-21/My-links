@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="My links.">
+	<main class="container">
+		<h1 style="text-align: center;">My links</h1>
+		<ul role="list" class="link-card-grid" >
+			<Card
+				title="Documentation"
+				description="Es para algo"
+			/>
+			<Card
+				title="Integrations"
+				description="Es para algo"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	ul .link-card-grid {
+    
+	}
+
+</style>
