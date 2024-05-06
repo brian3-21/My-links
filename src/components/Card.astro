@@ -6,6 +6,12 @@ interface Props {
 }
 
 const {title, description } = Astro.props;
+
+const deleteCard = () => {
+  // Aquí puedes agregar la lógica para eliminar el elemento de la lista
+  console.log("Targeta eliminada");
+};
+
 ---
 
 <li class="link-card">
@@ -15,7 +21,7 @@ const {title, description } = Astro.props;
 			<p>https://www.youtube.com/watch?v=wmaYYzBg-EM&list=PLkDKwmp6CmZYtt9hjkYp2KoAThh52axK2&index=1</p>
 			<div style="display: flex; " class="card-actions" >
 				<button style="margin-left: 10px;"class="secondary">Editar</button>
-				<button style="margin-left: 10px;"class="secondary" id="deleteCard">Eliminar</button> 
+				<button style="margin-left: 10px;"class="secondary" >Eliminar</button> 
 				<button style="margin-left: auto;"class="outline contrast">Copiar</button>
 			</div>
 		</div>
@@ -23,15 +29,17 @@ const {title, description } = Astro.props;
 </li>
 <style>
 	
+	.link-card{
+		list-style: none;
+	}
 	.card-actions{
 		display: flex;
 	}
+
 	
 	
 	
 </style>
-
-
 
 <!-- <article>
 	<h2 class="card-title">Play list de magnetismo</h2>
